@@ -1,1 +1,71 @@
+/* Fondo tipo Studio Ghibli, colores suaves */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://i.ibb.co/ryz6mYr/ghibli-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #2f2f2f;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 3px solid #d0a67c;
+}
+
+h1 {
+    font-family: 'Garamond', serif;
+    font-size: 2em;
+    color: #5b3a29;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ramo {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #8c6d5d;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.ramo.aprobado {
+    background-color: rgba(144, 238, 144, 0.8);
+    border-color: #3a7d44;
+}
+
+.ramo.bloqueado {
+    background-color: rgba(255, 182, 193, 0.6);
+    border-color: #d9534f;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    text-align: center;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.ramo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
